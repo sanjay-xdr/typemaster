@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { lorem } from 'faker';
+import { faker } from "@faker-js/faker";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +8,7 @@ import { lorem } from 'faker';
 })
 export class AppComponent {
  
-  randomText=lorem.sentence();
+  randomText=faker.hacker.phrase();
   enteredText=''
 
 
@@ -18,7 +18,8 @@ export class AppComponent {
   }
 
   generateMoreWords($event:any){
-    this.randomText=lorem.sentence();
+    this.randomText=faker.hacker.phrase();
+    // faker.hacker.phrase()
     this.enteredText='';
    
   }
