@@ -1,0 +1,25 @@
+
+.correct{
+    color: green;
+    font-weight: 700;
+}
+
+.incorrect{
+ color: red;
+ font-weight: 700;
+}
+
+.pending{
+    color: #000;
+    font-weight: 700;
+    
+}
+
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+
+}
